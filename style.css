@@ -1,0 +1,144 @@
+/* Google Font CDN [Poppins] */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Custom CSS Designing  */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Navbar Design  */
+.navbar{
+    padding: 1% 5%;
+    display: flex;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+}
+.navbar h1{
+    font-size: 29px;
+    font-weight: 800;
+}
+.navbar h1 span{
+    color: violet;
+}
+.navbar ul{
+    text-align: center;
+    flex: 1;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 6px 20px;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 18px;
+}
+.navbar ul li a:hover{
+    color: violet;
+}
+.navbar ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: violet;
+    transition: .5s;
+    display: block;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.icons{
+    padding: 6px;
+    cursor: pointer;
+}
+.icons i{
+    padding: 0 10px;
+    font-size: 22px;
+}
+.icons i:hover{
+    color: violet;
+    transition: .5s;
+}
+
+/* Login Container  */
+.login{
+    justify-content: center;
+    align-items: center;
+    margin: 3% 34%;
+    margin-top: 5%;
+    width: 30%;
+    min-height: 70vh;
+    background: transparent;
+    backdrop-filter: blur(80px);
+    border: 2px solid  rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+}
+.login.active{
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    transition: 1s;
+}
+.login h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 20px;
+    color: violet;
+}
+.login input{
+    margin: 10px 20px;
+    padding: 10px 10px;
+    min-width: 85%;
+}
+.button{
+    background-color: darkblue;
+    color: white;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 10px 8.4rem;
+}
+.login .button{
+    margin-right: 10px;
+}
+.btn{
+    padding: 10px 9.1rem;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: violet;
+    color: white;
+    transition: .4s;
+    font-weight: 400;
+}
+.flex{
+    padding-top: 50px;
+    margin-left: 22px;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+.flex h5{
+    padding: 10px;
+}
+.flex h5 span{
+    color: violet;
+    cursor: pointer;
+}
